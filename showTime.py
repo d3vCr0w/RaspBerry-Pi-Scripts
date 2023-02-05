@@ -1,8 +1,10 @@
 import time
 
 def showTime():
-	while True:
-		print time.strftime("%I:%M:%S", time.localtime())
-		time.sleep(1)
+    print(time.strftime("%I:%M:%S", time.localtime()))
 
-showTime()
+try:
+    showTime()
+    sleep(1)
+except KeyboardInterrupt:
+    print("")
